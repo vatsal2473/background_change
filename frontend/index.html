@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../frontend/style.css">
+    <!-- <script defer src="/js/main.js"></script> -->
+
+    <link rel="shortcut icon" href="../frontend/assets/logo_main.png" type="image/x-icon">
+    <title>Noice Loader</title>
+</head>
+<body>
+    <header class="header container">
+        <img src="../frontend/assets/logo_v2.png" alt="">
+    </header>
+
+    <main class="hero__section container">
+        <h1 class="hero__heading" data-value="3">Noice Uploader</h1>
+        <form action="https://noiceuploader.pagekite.me//file-upload" method="post" class="drop__container">
+            <div class="drop__area">
+                <div class="drop__file-upload">
+                    <input type="file" name="files" class="file-input" id="fileInput">
+                    <div class="icon">
+                        &times;
+                        <!-- <svg width="174" height="137" viewBox="0 0 174 137" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g filter="url(#filter0_d_325_1314)">
+                            <g clip-path="url(#clip0_325_1314)">
+                            <rect x="12" y="8" width="150" height="113" rx="8" fill="white"/>
+                            <rect x="20" y="16" width="135" height="97" rx="4" fill="#FFF4EE"/>
+                            <path d="M62.0583 39.538L37.2195 90.3656C35.2716 94.3516 38.1738 99 42.6102 99H131.311C135.995 99 138.872 93.8733 136.433 89.8751L122.181 66.5145C120.004 62.947 114.938 62.6416 112.349 65.9218L105.24 74.9277C102.693 78.1552 97.727 77.9218 95.4932 74.4696L72.4865 38.913C69.9507 34.9939 64.1078 35.3442 62.0583 39.538Z" fill="#5F1607" stroke="#5F1607"/>
+                            <circle cx="117.098" cy="52.521" r="6" fill="#5F1607"/>
+                            </g>
+                            </g>
+                            <defs>
+                            <filter id="filter0_d_325_1314" x="0" y="0" width="174" height="137" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                            <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                            <feOffset dy="4"/>
+                            <feGaussianBlur stdDeviation="6"/>
+                            <feComposite in2="hardAlpha" operator="out"/>
+                            <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+                            <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_325_1314"/>
+                            <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_325_1314" result="shape"/>
+                            </filter>
+                            <clipPath id="clip0_325_1314">
+                            <rect x="12" y="8" width="150" height="113" rx="8" fill="white"/>
+                            </clipPath>
+                            </defs>
+                            </svg>       -->
+                    </div>
+                    <h3 class="drop-text">Drag & drop here OR click to <strong>Browse</strong></h3>
+                </div>
+            </div>
+        </form>
+    <!--
+        <div class="dropdown">
+            <select name="menu" id="menu-items">
+                <option disabled>Select Cource</option>
+                <option value="full" selected>Full sleeve</option>
+                <option value="half">Half sleeve</option>
+                <option value="middle">Middle sleeve</option>
+                <option value="sleeveless">Sleeveless</option>
+            </select>
+        </div>
+    -->
+    </main>
+
+    <section class="image__container container">
+    </section>
+
+    <section class="fetched_image_container container">
+        <div id="result" class="">
+        </div>
+    </section>
+
+    <script src="../frontend/script.js"></script>
+</body>
+</html>

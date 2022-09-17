@@ -35,4 +35,4 @@ def add_background():
 
     result.paste(flowers1, (1000, -350), mask=flowers1)
 
-    result.save('image.png')
+    result.save('output/image.png')
