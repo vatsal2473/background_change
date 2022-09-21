@@ -89,7 +89,7 @@ def save_output_1(image_name,pred,d_dir,sigma=2,alpha=0.5):
     io.imsave(d_dir+'/'+imidx+'_sigma_' + str(sigma) + '_alpha_' + str(alpha) + '_composite.png',im_comp)
 
 def main():
-    image_name = 'static/uploads/image.jpeg'
+    image_name = 'static/uploads/image.jpg'
     img = cv2.imread(image_name) 
     img  = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
     #plt.imshow(img)

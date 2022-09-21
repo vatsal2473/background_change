@@ -2,7 +2,7 @@ from flask import Flask, flash, request, redirect, url_for, render_template, jso
 import cv2
 import base64
 import os, glob
-import segment, background_changer
+import segment, bg_editor
 import io
 from PIL import Image
 
@@ -45,6 +45,11 @@ def upload_image():
     filelist = glob.glob(os.path.join(dir, "*"))
     for f in filelist:
         os.remove(f)
+
+    dir = 'output_bg'
+    filelist = glob.glob(os.path.join(dir, "*"))
+    for f in filelist:
+        os.remove(f)
     
     #category  = request.form.get('human_model', type=str, default='')
     file=request.form.get('file',type = str, default='')
@@ -63,14 +68,15 @@ def upload_image():
     #     print(im.shape)
     #     cv2.imwrite('static/uploads/'+i.split('.')[0]+'.jpg',im)
 
+    #uncomment below two lines to run models
     #segment.main()
-    #background_changer.add_background()
+    #gb_editor.add_background()
 
-    names = os.listdir('output')
+    names = os.listdir('output_bg')
     output = []
     for i in range(len(names)):
         print(names[i])
-        file_path = 'output/' + names[i]
+        file_path = 'output_bg/' + names[i]
         print(file_path)
         encoded_img = get_response_image(file_path)
         
